@@ -10,7 +10,7 @@ Welcome to my portfolio ! This repository showcases the technologies used to cre
 - **React.Ts**: The main stack used to develope this project.
 - **Tailwind CSS**: A new CSS library that i am exploring. Used to style the entire project.
 - **Resend**: For handling email submissions from the contact form.
-- 
+
 ## Features
 
 - Responsive to all screen sizes. TailwindCSS helped a lot as it focues a lot on mobile-first approach.
