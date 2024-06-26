@@ -37,9 +37,9 @@ const Intro: FunctionComponent<IntroProps> = () => {
                 </div>
             </div>
             <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
-                <span className='text-3xl'>Hello,</span> <b>I&apos;m Jonathan Greenberg</b>, a <b>Full-Stack developer.</b>
+                <span className='text-3xl'>Greetings,</span> <b>I&apos;m Jonathan Greenberg</b>, a <b>Full-Stack developer.</b><br/>
                 With a strong foundation in both front-end and back-end development,
-                I thrive on tackling new challenges and continuously learning. <b>Welcome to my Portfolio !</b>
+                I thrive on tackling new challenges and continuously learning. <br/><b>Welcome to my Portfolio !</b>
             </motion.h1>
             <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium' initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
                 {/* Contact Link */}

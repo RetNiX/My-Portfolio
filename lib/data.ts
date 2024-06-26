@@ -3,8 +3,8 @@ import { GiDiploma } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa6";
 import portfolioPic from "@/public/portfolioPic.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import rmtdevImg from "@/public/projPic1.png";
+import wordanalyticsImg from "@/public/projPic2.png";
 
 // Links for the navigation bar
 export const links = [
@@ -68,20 +68,26 @@ export const projectsData = [
       "I worked on this project to try new technologies and to have a place to showcase my work.",
     tags: ["React", "Next.js", "Typescript", "Tailwind CSS", "Framer Motion", "Resend"],
     imageUrl: portfolioPic,
+    githubUrl: "https://github.com/RetNiX/My-Portfolio",
+    liveUrl: "#"
   },
   {
     title: "Final Project - PC Hardware Store",
     description:
       "A e-commerce website that allows you to buy PC hardware and accessories.",
-    tags: ["React", "TypeScript", "Node.js", "Bootstrap", "MongoDB"],
+    tags: ["React", "TypeScript", "Node.js", "Bootstrap", "MongoDB", "Express.js"],
     imageUrl: rmtdevImg,
+    githubUrl: "#",
+    liveUrl: "#"
   },
   {
-    title: "1st Full-Stack Project = Business Card System",
+    title: "1st Full-Stack Project - Business Card System",
     description:
       "A business card system that allows you to create, edit, delete and share business cards.",
-    tags: ["React", "Typescript", "Node.js", "MongoDB", "Bootstrap"],
+    tags: ["React", "Typescript", "Node.js", "MongoDB", "Bootstrap", "Express.js"],
     imageUrl: wordanalyticsImg,
+    githubUrl: "#",
+    liveUrl: "#"
   },
 ] as const;
 // All the Skills Data
