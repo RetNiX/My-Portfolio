@@ -17,12 +17,12 @@ export const sendEmail = async (formData: FormData) => {
     if (!validateString(message, 500)) {
         return {
             error: "Invalid message"
-        }
+        };
     }
     if (!validateString(senderEmail, 5000)) {
         return {
             error: "Invalid email"
-        }
+        };
     }
     let data;
     try {
@@ -33,12 +33,12 @@ export const sendEmail = async (formData: FormData) => {
             reply_to: senderEmail as string,
             react: React.createElement(ContactFormEmail, { message: message as string, senderEmail: senderEmail as string }) // Did this because we want to keep sendEmail as ts file and not tsx
         })
-    } catch (error: any) {
+    } catch (error: unknown) {
         return {
             error: getErrorMessage(error)
-        }
+        };
     }
-    // We gonna get or the error that occured or the data it self.
+    // We gonna get or the error that occured or the data itself.
     return {
         data
     };

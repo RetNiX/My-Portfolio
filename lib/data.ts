@@ -1,7 +1,7 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
+import { GiDiploma  } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { FaGraduationCap } from "react-icons/fa6";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -36,28 +36,28 @@ export const links = [
 // My education data
 export const educationData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Molecular Biology B.Sc.",
+    location: "Ariel University",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Started my journey in the field of biology, trying to get accepted to med school.",
+    icon: React.createElement(FaGraduationCap), // React component for the icon (had to do the createElement because we are inside a ts file and not a jsx file)
+    date: "Oct.2017 - Oct.2021",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Full-Stack Developer Gaduate",
+    location: "HackerU College",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Decided to change course and focus on my life-long hobby of programming. Learned front-end and back-end technologies and enjoying every second of it.",
+    icon: React.createElement(GiDiploma),
+    date: "Feb.2023 - Oct.2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Full-Stack Developer looking opportunities",
+    location: "Israel",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer working on multiple projects on my own, to inhance my skills. I'm open to full-time job opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Jan.2024 - Present",
   },
 ] as const;
 // All the Projects Data
@@ -86,19 +86,19 @@ export const projectsData = [
 ] as const;
 // All the Skills Data
 export const skillsData = [
-  {name: "HTML", isNew: false},
-  {name: "CSS", isNew: false},
-  {name: "JavaScript", isNew: false},
-  {name: "TypeScript", isNew: false},
-  {name: "React", isNew: false},
-  {name: "Redux", isNew: false},
-  {name: "Next.js", isNew: true},
-  {name: "Node.js", isNew: false},
-  {name: "Github", isNew: false},
-  {name: "MongoDB", isNew: false},
-  {name: "MySQL", isNew: false},
-  {name: "Bootstrap", isNew: false},
-  {name: "TailwindCSS", isNew: true},
-  {name: "Python", isNew: true},
-  {name: "Framer Motion", isNew: true},
+  { name: "HTML", isNew: false },
+  { name: "CSS", isNew: false },
+  { name: "JavaScript", isNew: false },
+  { name: "TypeScript", isNew: false },
+  { name: "React", isNew: false },
+  { name: "Redux", isNew: false },
+  { name: "Next.js", isNew: true },
+  { name: "Node.js", isNew: false },
+  { name: "Github", isNew: false },
+  { name: "MongoDB", isNew: false },
+  { name: "MySQL", isNew: false },
+  { name: "Bootstrap", isNew: false },
+  { name: "TailwindCSS", isNew: true },
+  { name: "Python", isNew: true },
+  { name: "Framer Motion", isNew: true },
 ] as const;

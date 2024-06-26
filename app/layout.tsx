@@ -4,11 +4,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import ActiveSectionContext from "@/components/ActiveSectionContext";
-import { ToastContainer } from 'react-toastify';
 import Footer from "@/components/Footer";
 import DarkModeBtn from "@/components/DarkModeBtn";
-import {ThemeContextProvider} from "@/components/ThemeContext";
-
+import { ThemeContextProvider } from "@/components/ThemeContext";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["greek"] });
 
@@ -29,12 +28,12 @@ export default function RootLayout({
         <div className="bg-[#f9d9da] absolute top-[-6rem] -z-10 right-[11rem] h-[31rem] w-[31rem] rounded-full blur-[10rem] sm:w-[68rem] dark:bg-[#946263]"></div>
         {/* right side of the page Color */}
         <div className="bg-[#cac5f1] absolute top-[-1rem] -z-10 left-[-35rem] h-[31rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-        <ToastContainer />
         <ThemeContextProvider>
           <ActiveSectionContext>
             <Header />
             {children}
             <Footer />
+            <Toaster position="top-center" />
             <DarkModeBtn />
           </ActiveSectionContext>
         </ThemeContextProvider>
