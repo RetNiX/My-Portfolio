@@ -14,14 +14,14 @@ export const sendEmail = async (formData: FormData) => {
     const senderEmail = formData.get('senderEmail');
 
     // server side validation
-    if (!validateString(message, 500)) {
-        return {
-            error: "Invalid message"
-        };
-    }
-    if (!validateString(senderEmail, 5000)) {
+    if (!validateString(senderEmail, 500)) {
         return {
             error: "Invalid email"
+        };
+    }
+    if (!validateString(message, 5000)) {
+        return {
+            error: "Invalid message"
         };
     }
     let data;

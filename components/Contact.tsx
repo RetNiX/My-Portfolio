@@ -15,7 +15,6 @@ interface ContactProps {
 const Contact: FunctionComponent<ContactProps> = () => {
     const { ref } = useSectionInView("Contact");
 
-
     return (
         <motion.section ref={ref} id="contact" className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center -mt-6' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
             <SectionHeading>Contact me</SectionHeading>

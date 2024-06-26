@@ -13,7 +13,7 @@ interface EducationProps {
 }
 
 const Education: FunctionComponent<EducationProps> = () => {
-    const { ref } = useSectionInView("Education")
+    const { ref } = useSectionInView("Education", 0.4)
     const { theme } = useTheme();
     return (
         <section ref={ref} id="education" className='scroll-mt-28 mb-28 sm:mb-40'>
