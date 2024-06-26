@@ -1,8 +1,8 @@
 import React from "react";
-import { GiDiploma  } from "react-icons/gi";
+import { GiDiploma } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa6";
-import corpcommentImg from "@/public/corpcomment.png";
+import portfolioPic from "@/public/portfolioPic.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -63,24 +63,24 @@ export const educationData = [
 // All the Projects Data
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "My Portfolio",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I worked on this project to try new technologies and to have a place to showcase my work.",
+    tags: ["React", "Next.js", "Typescript", "Tailwind CSS", "Framer Motion", "Resend"],
+    imageUrl: portfolioPic,
   },
   {
-    title: "rmtDev",
+    title: "Final Project - PC Hardware Store",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "A e-commerce website that allows you to buy PC hardware and accessories.",
+    tags: ["React", "TypeScript", "Node.js", "Bootstrap", "MongoDB"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "1st Full-Stack Project = Business Card System",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A business card system that allows you to create, edit, delete and share business cards.",
+    tags: ["React", "Typescript", "Node.js", "MongoDB", "Bootstrap"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
